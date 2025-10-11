@@ -1,0 +1,14 @@
+incoming_to_canonical:
+  Company Name: company
+  Website: website
+  Domain: domain
+  First Name: first_name
+  Last Name: last_name
+  Title: job_title
+  Email: email
+  LinkedIn: linkedin_url
+  Employees: company_size
+  Country: country
+defaults:
+  source: "apollo-export"
+  list_name: "uk-logistics-shippers"

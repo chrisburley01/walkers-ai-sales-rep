@@ -1,0 +1,37 @@
+icps:
+  walkers_pallet_shippers_uk:
+    geo: ["United Kingdom"]
+    industries:
+      - Manufacturing
+      - FMCG
+      - Home & DIY
+      - Building Materials
+      - Chemicals
+      - Retail
+      - Ecommerce
+      - Food & Drink (ambient)
+      - Automotive Aftermarket
+    company_size: {min: 20, max: 5000}
+    titles:
+      include:
+        - Head of Logistics
+        - Supply Chain Manager
+        - Operations Director
+        - Logistics Manager
+        - Warehouse Manager
+        - Transport Manager
+      exclude: [Student, Consultant, Intern]
+    qualifiers:
+      annual_pallets_min: 2000
+      ships_palletised: true
+      needs_storage_peak: true
+    pains:
+      - OTIF dips around seasonal peaks and late cut-offs
+      - Split consignments and missed trunk connections
+      - Limited overflow storage near North hubs
+      - Slow POD visibility and fragile claims
+    outcomes:
+      - >95% OTIF via network + direct trunk blend
+      - Overflow storage + x-dock within 30–60 mins of M62 corridor
+      - Photo-on-scan POD + live portal updates
+      - Lower trunk miles and fewer splits via smart routing

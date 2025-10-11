@@ -1,0 +1,54 @@
+sequence:
+  name: "Walkers – Pallet & Storage Intro (5 touches)"
+  send_window:
+    days: ["Mon","Tue","Wed","Thu"]
+    local_time: {start: "08:30", end: "17:15", tz: "Europe/London"}
+  steps:
+    - id: s1
+      channel: email
+      subject: "Quick intro re next‑day OTIF (M62 corridor)"
+      template_key: walkers_intro
+      wait_days_after_prev: 0
+    - id: s2
+      channel: email
+      subject: "Late cut‑offs + storage near Leeds/Manchester"
+      template_key: walkers_value
+      wait_days_after_prev: 3
+    - id: s3
+      channel: email
+      subject: "Direct trunks on top lanes?"
+      template_key: walkers_direct
+      wait_days_after_prev: 4
+    - id: s4
+      channel: email
+      subject: "Peak overflow — we can flex"
+      template_key: walkers_storage
+      wait_days_after_prev: 6
+    - id: s5
+      channel: email
+      subject: "Close the loop?"
+      template_key: walkers_breakup
+      wait_days_after_prev: 6
+
+templates:
+  walkers_intro: |
+    Hi {{first_name}},
+
+    I look after commercial at **Walkers Transport**. We help {{company}}‑type shippers keep **>95% OTIF** with a blend of pallet network + direct trunks, **late cut‑offs**, and local **storage/x‑dock** across Leeds, Manchester and the Midlands. {{hook or ''}}
+
+    If a **12‑minute call** helps, I’ll share a 1‑pager mapping your busiest lanes and where we’d lift service or reduce splits.
+    — Chris
+
+  walkers_value: |
+    Hi {{first_name}}, quick follow‑up.
+
+    Typical wins we see: later cut‑offs without missing connections, fewer splits via trunk design, and **photo‑on‑scan POD** into a live portal. If you share your top 3 lanes and weekly pallets, I’ll sketch a quick plan.
+
+  walkers_direct: |
+    For higher‑volume lanes we often add **direct trunks** (alongside network) to cut touches and improve first‑attempt success. Worth a 10‑minute look at {{company}}’s top lanes next week?
+
+  walkers_storage: |
+    We can flex **overflow storage + x‑dock** near the M62 to smooth peaks (Q4/seasonal). That usually protects next‑day performance and reduces trunk miles. Want a quick estimate?
+
+  walkers_breakup: |
+    I’ll close the loop for now — if late cut‑offs, overflow storage, or direct trunks would help later, just say and I’ll send the 1‑pager.

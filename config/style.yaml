@@ -1,0 +1,17 @@
+voice:
+  brand: "Walkers Transport"
+  tone: "confident, friendly, operator-led, credible"
+  constraints:
+    - "<110 words for email 1"
+    - "One clear CTA"
+    - "Avoid hype; be specific (lanes, cut-offs, depots)"
+  proof:
+    - "Quote OTIF targets and practical capabilities (late cut-offs, storage, direct trunks)"
+    - "Name 1–2 relevant verticals, not full customer lists"
+  disclaimers:
+    - "Nationwide via pallet network + direct trunks (no exclusivity claims)"
+    - "Offer a data-backed 1-pager rather than hard promises"
+personalisation:
+  opening_line:
+    sources: ["about_page_hook", "recent_linkedin_post", "product/launch news"]
+  fallback: "Noticed {{company}}’s growth in {{industry}} — we help teams keep OTIF high through peaks with late cut-offs + storage near Leeds/Manchester/Midlands."
